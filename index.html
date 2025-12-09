@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synth JS by trash only</title>
+    <title>Synth JS</title>
+    <link rel="stylesheet" href="/styles.css"></link>
 </head>
 <body>
     <header>
-        <h1>Synth JS by trash only</h1>
+        <h1>Synth JS</h1>
     </header>
     <main>
-        <p>This is a simple web page for the Synth JS project by trash only.</p>
+        <div class="main-content-container">
+            <p>A simple web based synthesizer to be build little by little</p>
+            <div class="synth-container">        
+                <span>start and stop the sound:</span>
+                <button type="button" id="play" name="play">PLAY SOUND</button>
+                <button type="button" id="stop" name="stop">STOP SOUND</button>
+                <br />
+                <span>adjust the amplitude of the sound:</span>
+                <input type="range" id="amplitude" name="amplitude" min="0" max="11" />
+                <!-- <canvas id="synth-canvas" class="canvas" width="400" height="200"></canvas> -->
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Synth JS by trash only</p>
+        <p>&copy; 2025 Synth JS by madeline</p>
     </footer>
+    <script src="/amplitude.js"></script>
 </body>
 </html>
