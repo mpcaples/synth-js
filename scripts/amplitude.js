@@ -31,11 +31,17 @@ const adjustAmplitude = (amplitude) => {
         gainNode.gain.value = amplitude;
     }
 }
+const adjustShape = (shape) => {
+    if (sourceNode) {
+        sourceNode.type = shape;
+    }
+}
 
 // grab the controls from the DOM:
 const startControl = document.getElementById('play'); 
 const stopControl = document.getElementById('stop'); 
 const amplitudeControl = document.getElementById('amplitude');
+const shapeControl = document.getElementById('shape');
 
 // Event listeners for the controls:
 startControl.addEventListener('click', startAudio); 
@@ -43,6 +49,10 @@ stopControl.addEventListener('click', stopAudio);
 amplitudeControl.addEventListener('input', (e) => {
     const amplitudeValue = e.target.value; 
     adjustAmplitude(amplitudeValue); 
+})
+shapeControl.addEventListener('change', (e) => {
+    const shape = e.target.value;
+    adjustShape(shape);
 })
 
 

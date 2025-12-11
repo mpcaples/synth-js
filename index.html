@@ -19,7 +19,15 @@
                 <button type="button" id="stop" name="stop">STOP SOUND</button>
                 <br />
                 <span>adjust the amplitude of the sound:</span>
-                <input type="range" id="amplitude" name="amplitude" min="0" max="11" />
+                <input type="range" id="amplitude" name="amplitude" min="0" max="20" />
+                <br />
+                <span>adjust the shape of the sound:</span>
+                <select id="shape" name="shape">
+                    <option value="sine">Sine</option>
+                    <option value="square">Square</option>
+                    <option value="sawtooth">Sawtooth</option>
+                    <option value="triangle">Triangle</option>
+                </select>
                 <!-- <canvas id="synth-canvas" class="canvas" width="400" height="200"></canvas> -->
             </div>
         </div>
