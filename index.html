@@ -14,9 +14,9 @@
         <div class="main-content-container">
             <p>A simple web based synthesizer to be built little by little</p>
             <div class="synth-container">        
-                <span>play or stopthe sound:</span>
-                <button type="button" id="play" name="play">PLAY SOUND</button>
-                <button type="button" id="stop" name="stop">STOP SOUND</button>
+                <span>play or stop the sound by clicking the keys:</span>
+                <div id="synth-keys" class="synth-keys-container"></div>
+                
                 <br />
                 <span>adjust the amplitude of the sound:</span>
                 <input type="range" id="amplitude" name="amplitude" min="0" max="20" />
@@ -35,6 +35,7 @@
     <footer>
         <p>&copy; 2025 Synth JS by madeline</p>
     </footer>
-    <script src="scripts/amplitude.js"></script>
+    <script src="scripts/synthkeys.js"></script>
+    <script src="scripts/play.js"></script>
 </body>
 </html>

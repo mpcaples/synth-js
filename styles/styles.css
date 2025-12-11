@@ -4,3 +4,7 @@ h1 {
 .canvas{
     border: royalblue 1px solid; 
 }
+.synth-keys-container {
+    display: flex;
+    gap: 10px;
+}
